@@ -76,6 +76,6 @@ vector<int> characterCounts(const string& st){
   st.tolower(); // make everything lowercase to ease letter counting
   for (int c = 0; c < st.size(); c++)
     if (int(st[c]) >= 97 && int(st[c]) <= 122)
-      v[int(st[c]) - 97] +  = 1;
+      v[int(st[c]) - 97] += 1;
   return ret;
 }
