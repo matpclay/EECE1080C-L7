@@ -72,7 +72,6 @@ unsigned numWords(const string& st){
 
 vector<int> characterCounts(const string& st){
   vector<int> ret(26);
-  // TODO: Fill me in.
   st.tolower(); // make everything lowercase to ease letter counting
   for (int c = 0; c < st.size(); c++)
     if (int(st[c]) >= 97 && int(st[c]) <= 122)
