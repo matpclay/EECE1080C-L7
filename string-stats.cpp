@@ -5,6 +5,7 @@
 #include <cmath>
 #include <cctype>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -73,9 +74,12 @@ unsigned numWords(const string& st){
 
 vector<int> characterCounts(const string& st){
   vector<int> ret(26);
-  st.tolower(); // make everything lowercase to ease letter counting
-  for (int c = 0; c < st.length(); c++)
+  for (int c = 0; c < st.length(); c++) {
+    // account for lower and upper case letters
     if (int(st[c]) >= 97 && int(st[c]) <= 122)
-      v[int(st[c]) - 97] += 1;
+      ret[int(st[c]) - 97] += 1;
+    else if (int(st[c]) >= 65 && int(st[c]) <= 90)
+      ret[int(st[c]) - 65] += 1;
+    }
   return ret;
 }
