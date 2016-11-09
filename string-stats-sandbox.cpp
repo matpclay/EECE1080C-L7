@@ -45,7 +45,13 @@ int main(int argc, char* argv[]){
     cout << "Punctuation Marks: " << numPunct(file_string) << endl;
     cout << "Digits: " << numDigits(file_string) << endl;
     cout << "Word Count: " << numWords(file_string) << endl;
-    cout << "Character Counts: " << characterCounts(file_string) << endl;
+    // assign character count list to a variable to prevent reaccessing of
+    // original method
+    vector<int> charCount = characterCounts(file_string);
+    // output each letter followed by its count
+    for (int k = 0; k < charCount.size(); k++) {
+      cout << (k+97) << ": " << charCount.at(k) << endl;
+    }
   }else{
     cout << "No input file given." << endl << endl;
   }
