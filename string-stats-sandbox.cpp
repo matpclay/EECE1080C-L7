@@ -9,9 +9,17 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <cctype>
 #include "string-stats.cpp"
 
 using namespace std;
+unsigned numLines(string);
+unsigned upperCaseChars(string);
+unsigned lowerCaseChars(string);
+unsigned numPunct(string);
+unsigned numDigits(string);
+unsigned numWords(string);
+vector<int> characterCounts(string);
 
 int main(int argc, char* argv[]){
   if(argc == 2){  // A parameter was given!
