@@ -1,0 +1,117 @@
+@author Matthew Clayton
+@date 19 November 2016
+@assign.ment Lab 7 String Stats
+@descrip.tion
+This text file contains the test data for Task 3 of the lab. It includes the output for each of the text files. 
+The relevant command is listed above the output.
+
+./string-stats-sandbox.exe MobyDick.txt
+
+Number of Lines: 23
+Uppercase Characters: 25
+Lowercase Characters: 889
+Punctuation Marks: 26
+Digits: 0
+Word Count: 207
+Character Counts:
+a: 58
+b: 10
+c: 19
+d: 22
+e: 110
+f: 22
+g: 25
+h: 52
+i: 83
+j: 0
+k: 5
+l: 49
+m: 34
+n: 64
+o: 65
+p: 25
+q: 2
+r: 57
+s: 54
+t: 76
+u: 26
+v: 14
+w: 17
+x: 0
+y: 23
+z: 2
+
+
+
+./string-stats-sandbox.exe Dickens-AChristmasCarol.txt
+
+Number of Lines: 3439
+Uppercase Characters: 3619
+Lowercase Characters: 121369
+Punctuation Marks: 7737
+Digits: 18
+Word Count: 29966
+Character Counts:
+a: 9617
+b: 1994
+c: 3187
+d: 5810
+e: 15333
+f: 2527
+g: 3048
+h: 8614
+i: 8612
+j: 119
+k: 1061
+l: 4715
+m: 2934
+n: 8153
+o: 9979
+p: 2180
+q: 100
+r: 7304
+s: 8226
+t: 11245
+u: 3413
+v: 1070
+w: 3161
+x: 140
+y: 2358
+z: 88
+
+
+./string-stats-sandbox.exe Barrie-PeterPan.txt
+
+Number of Lines: 6164
+Uppercase Characters: 5775
+Lowercase Characters: 189580
+Punctuation Marks: 11700
+Digits: 50
+Word Count: 48086
+Character Counts:
+a: 15104
+b: 3060
+c: 4060
+d: 9178
+e: 25177
+f: 3641
+g: 4104
+h: 14411
+i: 12864
+j: 344
+k: 1989
+l: 8061
+m: 4343
+n: 12981
+o: 14177
+p: 3058
+q: 185
+r: 10637
+s: 12080
+t: 18412
+u: 5404
+v: 1533
+w: 5619
+x: 204
+y: 4638
+z: 91
