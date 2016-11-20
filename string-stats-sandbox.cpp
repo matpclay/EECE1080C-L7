@@ -13,13 +13,6 @@
 #include "string-stats.cpp"
 
 using namespace std;
-unsigned numLines(string);
-unsigned upperCaseChars(string);
-unsigned lowerCaseChars(string);
-unsigned numPunct(string);
-unsigned numDigits(string);
-unsigned numWords(string);
-vector<int> characterCounts(string);
 
 int main(int argc, char* argv[]){
   if(argc == 2){  // A parameter was given!
@@ -45,14 +38,12 @@ int main(int argc, char* argv[]){
     cout << "Punctuation Marks: " << numPunct(file_string) << endl;
     cout << "Digits: " << numDigits(file_string) << endl;
     cout << "Word Count: " << numWords(file_string) << endl;
-    // assign character count list to a variable to prevent reaccessing of
-    // original method
-    vector<int> charCount = characterCounts(file_string);
-    // output each letter followed by its count
-    for (int k = 0; k < charCount.size(); k++) {
-      cout << (k+97) << ": " << charCount.at(k) << endl;
+    cout << "Character Counts: \n";
+    vector<int> counts = characterCounts(file_string);
+    for(char curChar = 'a'; curChar <= 'z'; curChar++){
+      cout << curChar << ": " << counts[curChar - 'a'] << endl;
     }
-  }else{
+  } else {
     cout << "No input file given." << endl << endl;
   }
 
